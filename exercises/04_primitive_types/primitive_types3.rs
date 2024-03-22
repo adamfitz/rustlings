@@ -6,6 +6,7 @@
 // for a hint.
 
 fn main() {
+    // declare the array size (101) and the what to fill it with (each element is 0 and a u32 type)
     let a = [0u32;101];
 
     if a.len() >= 100 {
