@@ -6,8 +6,6 @@
 // Execute `rustlings hint move_semantics3` or use the `hint` watch subcommand
 // for a hint.
 
-// I AM NOT DONE
-
 #[test]
 fn main() {
     let vec0 = vec![22, 44, 66];
@@ -17,7 +15,8 @@ fn main() {
     assert_eq!(vec1, vec![22, 44, 66, 88]);
 }
 
-fn fill_vec(vec: Vec<i32>) -> Vec<i32> {
+// passing vec0 into this functoin, in order to add to it, the passed in var must be mutable
+fn fill_vec(mut vec: Vec<i32>) -> Vec<i32> {
     vec.push(88);
 
     vec
